@@ -1,2 +1,1 @@
-# Basic-Js-Projects
- Few simple projects created in JavaScript
+# [Simple ToDo List](https://matixy.github.io/Basic-Js-Projects/Simple-To-Do-List/)
