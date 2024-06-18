@@ -49,7 +49,7 @@ const addNewTodo = () => {
 		errorInfo.textContent = ''
 		todoInput.value = ''
 	} else {
-		errorInfo.textContent = 'Wpisz treść zadania!'
+		errorInfo.textContent = 'Please enter the name of the task!'
 	}
 }
 
@@ -103,7 +103,7 @@ const changeTodoText = () => {
 		popup.style.display = 'none'
 		popupInfo.textContent = ''
 	} else {
-		popupInfo.textContent = 'Musisz podać jakąś treść!'
+		popupInfo.textContent = 'You need enter the name of task!'
 	}
 }
 
@@ -111,7 +111,7 @@ const deleteTodo = (e) => {
 	(e.target.closest('li')).remove()
 
 	if (ulList.children.length === 0) {
-		errorInfo.textContent = 'Brak zadań na liście'
+		errorInfo.textContent = 'There is no tasks to do'
 	} else {
 		errorInfo.textContent = ''
 	}
