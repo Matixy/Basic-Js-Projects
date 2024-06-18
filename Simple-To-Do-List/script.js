@@ -1,14 +1,13 @@
-let todoInput // miejsce, gdzie użytkownik wpisuje treść zadania
-let errorInfo // info o braku zadań / konieczności wpisania tekstu
-let addBtn // prycisk ADD - dodaje nowe elementy do listy
-let ulList // lista zadań tagi UL
-// let newTodo // nowo dodany LI, nowe zadanie
-let popup // popup
-let popupInfo // tekst w popupie, jak sie doda pusty tekst
-let todoToEdit // edytowany todo
-let popupInput // input w popupie
-let popupAddBtn // przycisk dodaj w popupie
-let popupCloseBtn // przycisk anuluj w popupie
+let todoInput
+let errorInfo
+let addBtn 
+let ulList
+let popup
+let popupInfo
+let todoToEdit
+let popupInput
+let popupAddBtn 
+let popupCloseBtn 
 
 const main = () => {
 	prepareDOMElements()
@@ -16,7 +15,6 @@ const main = () => {
 }
 
 const prepareDOMElements = () => {
-	// pobieramy wszystkie elementy
 
 	todoInput = document.querySelector('.todo-input')
 	errorInfo = document.querySelector('.error-info')
@@ -31,7 +29,6 @@ const prepareDOMElements = () => {
 }
 
 const prepareDOMEvents = () => {
-	// nadajemy nasłuchiwanie
 
 	addBtn.addEventListener('click', addNewTodo)
 	ulList.addEventListener('click', checkClick)
