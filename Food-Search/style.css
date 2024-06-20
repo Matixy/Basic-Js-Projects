@@ -1,0 +1,74 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --deep-dark: rgb(26, 26, 26);
+  --light-dark: rgb(79, 82, 92);
+  --light-blue: rgb(0, 132, 255);
+  --dark-blue: rgb(2, 84, 161);
+  --light: rgb(245, 245, 245);
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-family: 'Montserrat', sans-serif;
+  background-color: var(--light);
+}
+
+.search-box {
+  margin: 1em 0 1em 0;
+  border: solid black 0.1em;
+  box-shadow: 0px 0px 20px var(--deep-dark);
+}
+
+.search-headling {
+  background-image: url('https://images.pexels.com/photos/1639563/pexels-photo-1639563.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  font-size: 16px;
+  padding: 5px 10px;
+  padding: 2em;
+}
+
+.search-headling h1 {
+  margin-top: 2em;
+  color: white;
+  font-size: 2em;
+}
+
+.search-input {
+  margin-top: 2em;
+  padding: 0.5em 1em 0.5em 1em;
+  min-width: 40em;
+  background-color: var(--light);
+  border: solid black 0.1em;
+}
+
+.foods {
+  padding: 2em;
+}
+
+.list-headling {
+  margin-bottom: 1em;
+}
+
+.food {
+  list-style-type: none;
+  border-bottom: var(--deep-dark) 0.1em solid;
+  padding: 0.5em 0 0.5em 1em;
+}
+
+.food-list li:last-child {
+  border: none;
+}
+
+.hide {
+  display: none;
+}
