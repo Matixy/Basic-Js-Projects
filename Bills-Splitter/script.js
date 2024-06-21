@@ -1,4 +1,4 @@
-const billForm = document.querySelector('.calculate-bill')
+const billForm = document.querySelector('.calculate-bill-form')
 const billFormData = [...billForm.elements].filter(elem => elem.tagName !== 'BUTTON')
 
 const billAmount = document.getElementById('billAmount')

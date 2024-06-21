@@ -47,7 +47,7 @@ body {
   color: rgb(58, 58, 58);
 }
 
-.calculate-bill {
+.calculate-bill-form {
   display: flex;
   flex-direction: column;
   padding: 2em;
