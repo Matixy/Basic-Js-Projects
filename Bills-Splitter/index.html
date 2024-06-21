@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Food search</title>
+
+  <!-- css -->
+  <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+  <main>
+    <section class="bill-box">
+      <header class="bill-headling">
+        <h1>
+          BILLSPLITTER
+          <small class="head-bill-caption">Split bills with your friends</small>
+        </h1>
+      </header>
+      <form action="" class="calculate-bill">
+        <section class="form-data">
+          <label for="billAmount" class="form-label">
+            <span class="form-label-headling">Bill amount:</span>     
+            <input id="billAmount" type="number" placeholder="" name="billAmount" min="1" value="">
+            <span class="feedback"></span>
+          </label>
+  
+          <label for="personsAmount" class="form-label">
+            <span class="form-label-headling">Amount of persons:</span>     
+            <input id="personsAmount" type="number" placeholder="" name="personsAmount" min="1" value="">
+            <span class="feedback"></span>
+          </label>
+  
+          <label for="tip" class="form-label">
+            <span class="form-label-headling">Tip:</span>     
+            <select name="tip" id="tipAmount">
+              <option value="" disabled selected>- choose tip -</option>
+              <option value="0">0%</option>
+              <option value="0.05">5%</option>
+              <option value="0.10">10%</option>
+              <option value="0.15">15%</option>
+              <option value="0.20">20%</option>
+            </select>
+            <span class="feedback invalid"></span>
+          </label>
+        </section>
+
+        <section class="form-btn">
+          <button type="submit">Calculate</button>
+        </section>
+      </form>
+
+      <section>
+        <p class="result-info"></p>
+      </section>
+    </section>
+  </main>
+  <script src="./script.js"></script>
+</body>
+</html>

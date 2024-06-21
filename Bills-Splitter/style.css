@@ -1,0 +1,103 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --deep-dark: rgb(26, 26, 26);
+  --light-dark: rgb(79, 82, 92);
+  --light-blue: rgb(0, 132, 255);
+  --dark-blue: rgb(2, 84, 161);
+  --light: rgb(245, 245, 245);
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-family: 'Montserrat', sans-serif;
+  background-color: var(--light);
+}
+
+.bill-box {
+  margin: 1em 0 1em 0;
+  border: solid black 0.1em;
+  box-shadow: 0px 0px 20px var(--deep-dark);
+}
+
+.bill-headling {
+  background-color: var(--light-blue);
+  text-align: center;
+  padding: 2em;
+}
+
+.bill-headling h1 {
+  margin: 1em 0 0.5em 0;
+  color: white;
+  font-size: 2em;
+  display: flex;
+  flex-direction: column;
+}
+
+.head-bill-caption {
+  margin-top: 0.5em;
+  font-size: 0.8em;
+  color: rgb(58, 58, 58);
+}
+
+.calculate-bill {
+  display: flex;
+  flex-direction: column;
+  padding: 2em;
+}
+
+.form-label {
+  display: flex;
+  flex-direction: column;
+  margin: 0em 0 2em 0;
+}
+
+input, select {
+  margin-top: 1em;
+  padding: 0.5em 1em 0.5em 1em;
+  min-width: 40em;
+  background-color: var(--light);
+  border: solid black 0.1em;
+}
+
+.feedback {
+  margin-top: 0.3em;
+  font-size: 1em;
+  color: rgb(197, 8, 8);
+}
+
+.form-btn {
+  text-align: center;
+}
+
+button {
+  background-color: var(--light-blue);
+  border: none;
+  border-radius: 0.5em;
+  min-width: 30em;
+  margin: 1em 0 1em 0;
+  padding: 1em;
+  font-size: 1em;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  color: var(--light);
+  cursor: pointer;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.result-info {
+  font-size: 1.2em;
+  text-align: center;
+  padding-bottom: 1em;
+  margin-bottom: 1em;
+}
