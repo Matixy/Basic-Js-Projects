@@ -1,0 +1,118 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --deep-dark: rgb(26, 26, 26);
+  --light-dark: rgb(79, 82, 92);
+  --light-blue: rgb(0, 132, 255);
+  --dark-blue: rgb(2, 84, 161);
+  --light: rgb(245, 245, 245);
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-family: 'Montserrat', sans-serif;
+  background: linear-gradient(90deg, rgba(1,168,222,1) 0%, rgba(1,202,242,1) 100%);
+}
+
+.form-box {
+  margin: 1em 0 1em 0;
+  border: solid black 0.1em;
+  box-shadow: 0px 0px 20px var(--deep-dark);
+  background-color: var(--light);
+}
+
+.register-form {
+  display: flex;
+  flex-direction: column;
+  padding: 0 2em 2em 2em;
+}
+
+.register-form h1 {
+  text-align: center;
+  margin: 1em 0 1em 0;
+  font-size: 2em;
+}
+
+.form-paragraph {
+  display: flex;
+  flex-direction: column;
+  font-size: 1.1em;
+  margin-bottom: 2em;
+}
+  
+input, select {
+  margin-top: 1em;
+  padding: 0.5em 1em 0.5em 1em;
+  min-width: 30em;
+  background-color: var(--light);
+  border: solid black 0.1em;
+}
+
+.feedback {
+  margin-top: 0.3em;
+  font-size: 0.8em;
+  color: rgb(187, 7, 7)
+}
+
+.hide {
+  display: none;
+}
+
+.form-btn {
+  text-align: right;
+}
+
+button {
+  border: none;
+  border-radius: 0.5em;
+  min-width: 8em;
+  margin: 1em 0.2em 1em 0.2em;
+  padding: 0.8em 1em;
+  font-size: 1em;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  color: var(--light);
+  cursor: pointer;
+  transition: all 0.1s ease-in;
+}
+
+.send-btn {
+  color: rgb(5, 110, 5);
+  border: 0.1em solid rgb(5, 110, 5);
+}
+
+.send-btn:hover {
+  color: white;
+  background-color: rgb(5, 110, 5);
+  border: none;
+}
+
+.clear-btn {
+  color: rgb(187, 7, 7);
+  border: 0.1em solid rgb(187, 7, 7);
+}
+
+.send-btn:hover {
+  color: white;
+  background-color: rgb(5, 110, 5);
+}
+
+.clear-btn:hover {
+  color: white;
+  background-color: rgb(187, 7, 7);
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.border-error {
+  border-color: rgb(187, 7, 7);
+}

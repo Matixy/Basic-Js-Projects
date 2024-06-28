@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Food search</title>
+
+  <!-- css -->
+  <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+  <main>
+    <section class="form-box">
+      <form action="" class="register-form">
+        <section class="form-data">
+          <h1>Register</h1>
+          <p class="form-paragraph">
+            <label for="username">
+              <span class="form-label-headling">Username:</span> 
+            </label>
+            <input id="username" type="text" placeholder="Enter username" name="userName" value="">
+            <span class="feedback hide">Username must have min. 3 letters!</span>
+          </p>
+  
+          <p class="form-paragraph">
+            <label for="password">
+              <span class="form-label-headling">Password:</span> 
+            </label>
+            <input id="password" type="password" placeholder="Enter password" name="password" value="">
+            <span class="feedback hide">Password must have min. 8 letters!</span>
+          </p>
+  
+          <p class="form-paragraph">
+            <label for="repeat-passowrd" class="form-label">
+              <span class="form-label-headling">Repeat password:</span> 
+            </label>
+            <input id="repeat-passowrd" type="password" placeholder="Repeat password" name="repeatPassowrd" value="">
+            <span class="feedback hide">Passwords are not the same!</span>
+          </p>
+          
+          <p class="form-paragraph">
+            <label for="email" class="form-label">
+              <span class="form-label-headling">Email:</span> 
+            </label>
+            <input id="email" type="text" placeholder="Enter email" name="email" value="">
+            <span class="feedback hide">Please enter the correct email!</span>
+          </p>
+        </section>
+
+        <section class="form-btn">
+          <button class="clear-btn" type="reset">Clear</button>
+          <button class="send-btn" type="submit">Send</button>
+        </section>
+      </form>
+    </section>
+  </main>
+  <script src="./script.js"></script>
+</body>
+</html>
