@@ -18,7 +18,7 @@ body {
   align-items: center;
   min-height: 100vh;
   font-family: 'Montserrat', sans-serif;
-  background: linear-gradient(90deg, rgba(1,168,222,1) 0%, rgba(1,202,242,1) 100%);
+  background: linear-gradient(90deg, rgb(3, 126, 167) 0%, rgba(1,202,242,1) 100%);
 }
 
 .form-box {
