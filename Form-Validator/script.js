@@ -58,15 +58,15 @@ const checkEmail = () => {
   return true
 }
 
-const hasDisplayedFeedback = (el) => el.classList.contains('border-error')
+const hasDisplayedFeedback = (el) => el.classList.contains('input-error')
 
 const displayFeedback = (el) => {
-  el.classList.add('border-error')
+  el.classList.add('input-error')
   el.nextElementSibling.classList.remove('hide')
 } 
 
 const hideFeedback = (el) => {
-  el.classList.remove('border-error')
+  el.classList.remove('input-error')
   el.nextElementSibling.classList.add('hide')
 }
 
@@ -86,8 +86,6 @@ const submitForm = (e) => {
 }
 
 const clearForm = (e) => {
-  e.preventDefault()
-
   loginInput.value = ''
   passwordInput.value = ''
   repeatPasswordInput.value = ''
