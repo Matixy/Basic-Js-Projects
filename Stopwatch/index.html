@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stopwatch</title>
+
+  <!-- css -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- fontawesome -->
+  <script src="https://kit.fontawesome.com/935216980f.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+  <main>
+    <aside>
+      <section class="modals">
+        <section class="modal">
+          <article class="instruction">
+            <h3 class="heading">Instruction:</h3>
+            <ul>
+              <li>
+                <p><i class="fa-solid fa-play orange"></i> - start</p>
+              </li>
+              <li>
+                <p><i class="fa-solid fa-pause orange"></i> - pause</p>
+              </li>
+              <li>
+                <p><i class="fa-solid fa-stop orange"></i> - stop</p>
+              </li>
+              <li>
+                <p><i class="fa-solid fa-xmark orange"></i> - delete all (includes archive)</p>
+              </li>
+              <li>
+                <p><span class="orange bold">archive</span> - look previous times</p>
+              </li>
+            </ul>
+          </article>
+          <button data-name="hideModal" class="border-orange">
+            <p>Close</p>
+          </button>
+        </section>
+      </section>
+    </aside>
+
+    <section class="content-box">
+      <div class="tools">
+        <button data-name="colorsBar" aria-label="color change" class="tool-btn orange-hover"><i class="fa-solid fa-paintbrush"></i></button>
+        <button data-name="showModal" aria-label="info" class="tool-btn orange-hover"><i class="fa-solid fa-info"></i></button>
+      </div>
+      <section class="stopwatch">
+        <section class="stopwatch-box">
+          <section class="stopwatch-face">
+            <h1 class="heading">Stopwatch</h1>
+            <h2 class="actual-time orange">00:00</h2>
+            <h5 class="previous-time"></h5>
+          </section>
+  
+          <div class="stopwatch-btns">
+            <button type="button" aria-label="play" data-name="play" class="btn stopwatch-btn border-orange">
+              <i class="fa-solid fa-play"></i>
+            </button>
+            <button type="button" aria-label="pause" data-name="pause" class="btn stopwatch-btn border-orange"> 
+              <i class="fa-solid fa-pause"></i>
+            </button>
+            <button type="button" aria-label="stop" data-name="stop" class="btn stopwatch-btn border-orange">
+              <i class="fa-solid fa-stop"></i>
+            </button>
+            <button type="button" aria-label="delete" data-name="del" class="btn stopwatch-btn border-orange">
+              <i class="fa-solid fa-xmark"></i>
+            </button>
+          </div>
+        </section>
+        <article class="archive-box">
+          <button type="button" class="btn archive-btn border-orange" data-name="archive"><h4>ARCHIVE</h4></button>
+  
+          <ul data-name="archiveList" class="hide">
+          </ul>
+        </article>
+      </section>
+      <aside class="colors-bar">
+        <div data-color-name="orange" class="color-box bg-orange"></div>
+        <div data-color-name="green" class="color-box bg-green"></div>
+        <div data-color-name="blue" class="color-box bg-blue"></div>
+      </aside>
+    </section>
+  </main>
+  <script src="./script.js"></script>
+</body>
+</html>

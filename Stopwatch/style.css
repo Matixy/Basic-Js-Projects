@@ -1,0 +1,250 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --deep-dark: rgb(26, 26, 26);
+  --light-dark: rgb(79, 82, 92);
+  --light-blue: rgb(0, 132, 255);
+  --dark-blue: rgb(2, 84, 161);
+  --light: rgb(245, 245, 245);
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  color: var(--light);
+  font-family: 'Montserrat', sans-serif;
+  background: var(--deep-dark);
+  font-size: 1em;
+}
+
+.content-box {
+  margin: 1em 0 1em 0;
+  border: solid black 0.1em;
+  padding: 0 1em 1em 1em;
+  box-shadow: 0px 0px 20px black;
+  background-color: var(--deep-dark);
+  min-width: 40em;
+  border-radius: 1em;
+  text-align: center;
+  position: relative;
+}
+
+.stopwatch {
+  margin: 0 6em 3em 6em;
+  text-align: center;
+  position: relative;
+  z-index: 2;
+}
+
+.tools {
+  text-align: right;
+  position: relative;
+  z-index: 2;
+}
+
+.tool-btn {
+  border: none;
+  background-color: transparent;
+  padding: 0.5em;
+}
+
+.tool-btn:hover {
+  background-color: transparent;
+}
+
+.stopwatch-face {
+  margin: 1em;
+  font-weight: lighter;
+}
+
+.heading {
+  font-size: 3em;
+  font-weight: lighter;
+  margin-bottom: 0.5em;
+}
+
+.actual-time {
+  font-size: 5em;
+  font-weight: lighter;
+}
+
+.previous-time {
+  font-weight: lighter;
+  font-size: 1em;
+}
+
+button {
+  border: solid 0.1em transparent;
+  border-radius: 0.5em;
+  margin: 1em 0.2em 1em 0.2em;
+  padding: 0.8em 2em;
+  font-size: 1em;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.1s ease-in;
+  color: white;
+  background-color: transparent;
+}
+
+.stopwatch-btns {
+  display: flex;
+  justify-content: space-between;
+}
+
+.archive-btn {
+  width: 100%;
+  margin-top: 0em;
+  font-size: 1.2em;
+}
+
+ul {
+  list-style: none;
+}
+
+.times {
+  width: 30%;
+  margin: 0 auto 0.3em auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.orange {
+  color: orange;
+}
+
+.orange-hover:hover i{
+  color: orange;
+}
+
+.border-orange {
+  border-color: orange;
+}
+
+.border-orange:hover {
+  background-color: orange;
+}
+
+.green {
+  color: green;
+}
+
+.green-hover:hover i {
+  color: green;
+}
+
+.border-green {
+  border-color: green;
+}
+
+.border-green:hover {
+  background-color: green;
+}
+
+.blue {
+  color: var(--light-blue);
+}
+
+.blue-hover:hover i {
+  color: var(--light-blue);
+}
+
+.border-blue {
+  border-color: var(--light-blue);
+}
+
+.border-blue:hover {
+  background-color: var(--light-blue);
+}
+
+.modals {
+  position: fixed; 
+  display: flex;
+  z-index: 3; 
+  left: 0;
+  top: 0;
+  width: 100%; 
+  height: 100%; 
+  overflow: auto;
+  background-color: rgba(0,0,0,0.4);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity .3s ease;
+}
+
+.modal {
+  padding: 1em 2em 2em 2em;
+  box-shadow: 0px 0px 20px black;
+  background-color: var(--deep-dark);
+  width: 30em;
+  border-radius: 1em;
+  text-align: center;
+  font-size: 1.2em;
+  margin: auto;
+}
+
+.modal > article {
+  text-align: left;
+}
+
+.modal .heading {
+  font-size: 2em;
+}
+
+.modal li {
+  margin-bottom: 0.3em;
+}
+
+.active {
+  opacity: 1;
+  pointer-events: all;
+}
+
+.hide {
+  display: none;
+}
+
+.colors-bar {
+  position: absolute;
+  right: 1em;
+  top: 5em;
+  transition: transform .3s, z-index .15s;
+  z-index: -1;
+}
+
+.color-box {
+  width: 2em;
+  height: 2em;
+  cursor: pointer;
+  border: solid 0.1em var(--light);
+  border-radius: 50%;
+  margin-bottom: 1em;
+}
+
+.colors-bar-active {
+  transform: translateX(5em);
+  transition: transform .3s, z-index .35s;
+  z-index: 0;
+}
+
+.bg-blue {
+  background-color: var(--light-blue);
+}
+
+.bg-green {
+  background-color: green;
+}
+
+.bg-orange {
+  background-color: orange;
+}
