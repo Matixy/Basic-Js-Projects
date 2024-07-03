@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Food search</title>
+
+  <!-- css -->
+  <link rel="stylesheet" href="style.css">
+
+    <!-- fontawesome -->
+    <script src="https://kit.fontawesome.com/935216980f.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <main>
+    <section class="content-box">
+      <header>
+        <h1>Exchange Rate App</h1>
+        <small>Check current exchange rates!</small>
+      </header>
+      <div class="currency-amounts-box">
+        <input title="Currency amount" type="number" class="currency-amounts" placeholder="" value="1" data-id="amountDeposit" min="1">
+        <p class="currency-amounts" data-id="amountWithdraw"></p>
+      </div>
+      <div class="currencies-box">
+        <select title="Deposit currency" class="currency" id="" data-id="currencyDeposit">
+          <option value="PLN" selected>PLN</option>
+          <option value="USD" >USD</option>
+          <option value="GBP" >GBP</option>
+          <option value="EUR" >EUR</option>
+          <option value="CHF" >CHF</option>
+        </select>
+
+        <button title="Swap currencies" data-id="swap">
+          <i class="fa-solid fa-rotate"></i>
+        </button>
+
+        <select title="Withdraw currency" class="currency" id="" data-id="currencyWithdraw">
+          <option value="PLN">PLN</option>
+          <option value="USD" selected>USD</option>
+          <option value="GBP">GBP</option>
+          <option value="EUR">EUR</option>
+          <option value="CHF">CHF</option>
+        </select>
+      </div>
+      <p class="exchange-rate" data-id="exchangeRate"></p>
+    </section>
+  </main>
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script src="./script.js"></script>
+</body>
+</html>
