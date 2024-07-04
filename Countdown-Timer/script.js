@@ -162,6 +162,10 @@ const checkYear = () => {
   checkMonth()
 }
 
+const checkImg = () => {
+    if (imageUrlInput.value === '') imageUrlInput.value = DEFAULT_IMG_URL
+}
+
 const prepareDomEvents = () => {
   settingsBtn.addEventListener('click', toggleSettingsBar)
   saveBtn.addEventListener('click', saveSettings)
@@ -169,6 +173,7 @@ const prepareDomEvents = () => {
   dayInput.addEventListener('focusout', checkDay)
   monthInput.addEventListener('focusout', checkMonth)
   yearInput.addEventListener('focusout', checkYear)
+  imageUrlInput.addEventListener('focusout', checkImg)
 }
 
 const main = () => {
