@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stopwatch</title>
+
+  <!-- css -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- fontawesome -->
+  <script src="https://kit.fontawesome.com/935216980f.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+  <main>
+    <section class="content-box">
+      <section class="timer">
+        <section class="heading">
+          <button title="Settings" class="settings-btn">
+            <i class="fa-solid fa-sliders"></i>
+          </button>
+        </section>
+        <section class="countdown-timer">
+          <h3 data-id="displayedEventName">New year in: </h3>
+          <section class="countdown-cards-box">
+            <article class="countdown-card" data-card="days">
+              <p class="countdown-number">10</p>
+              <p class="countdown-unit">Days</p>
+            </article>
+            <article class="countdown-card" data-card="hours">
+              <p class="countdown-number">10</p>
+              <p class="countdown-unit">Hours</p>
+            </article>
+            <article class="countdown-card" data-card="minutes">
+              <p class="countdown-number">10</p>
+              <p class="countdown-unit">Minutes</p>
+            </article>
+            <article class="countdown-card" data-card="seconds">
+              <p class="countdown-number">10</p>
+              <p class="countdown-unit">Seconds</p>
+            </article>
+          </section>
+        </section>
+      </section>
+      <aside class="settings-bar">
+        <section class="settings-box">
+          <section class="settings-data">
+            <h2>Settings</h2>
+            <p class="form-paragraph">
+              <label for="eventName" class="form-label-headling">
+                <span>Event name:</span> 
+              </label>
+              <input id="eventName" type="text" name="userName" value="New year" data-id="eventName">
+            </p>
+
+            <section class="form-paragraph-group">
+              <p class="form-paragraph">
+                <label for="day" class="form-label-headling">
+                  <span>Day:</span> 
+                </label>
+                <input id="day" type="number" name="day" value="1" min="1" max="31" data-id="day">
+              </p>
+              <p class="form-paragraph">
+                <label for="month" class="form-label-headling">
+                  <span class="form-label-headling">Month:</span> 
+                </label>
+                <input id="month" type="number" name="month" value="1" min="1" max="12" data-id="month">
+              </p>
+              <p class="form-paragraph">
+                <label for="year" class="form-label-headling">
+                  <span >Year:</span> 
+                </label>
+                <input id="year" type="number" name="year" value="" data-id="year">
+              </p>
+            </section>
+
+            <p class="form-paragraph">
+              <label for="imgUrl" class="form-label-headling">
+                <span>Image url:</span> 
+              </label>
+              <input id="imgUrl" type="text" name="imageUrl" value="https://www.onecalendar.nl/images/onecalendar.jpg" data-id="imageUrl">
+            </p>
+
+          </section>
+
+          <section class="settings-btns">
+            <button class="save-btn" type="submit" data-id="saveBtn">Save</button>
+          </section>
+        </section>
+      </aside>
+    </section>
+  </main>
+  <script src="./script.js"></script>
+</body>
+</html>
