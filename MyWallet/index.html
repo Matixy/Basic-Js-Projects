@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MyWallet</title>
+
+  <!-- css -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- fontawesome -->
+  <script src="https://kit.fontawesome.com/935216980f.js" crossorigin="anonymous"></script>
+
+</head>
+<body class="color-dark bg-white">
+  <header>
+    <span class="heading">
+      <i class="fa-solid fa-wallet fa-xl"></i>
+      <h1>MyWallet</h1>
+    </span>
+    <small>Yours personal finance manager.</small>
+  </header>
+  <main>
+      <section class="content-box">
+        <section class="transaction-box">
+          <h2>Transaction list:</h2>
+          <div>
+            <article class="transactions-lists-box border-dark">
+              <h3 class="color-green">Income:</h3>
+              <ul data-list="income">
+  
+              </ul>
+            </article>
+            <article class="transactions-lists-box border-dark">
+              <h3 class="color-red">Expenses:</h3>
+              <ul data-list="expenses">
+  
+              </ul>
+            </article>
+          </div>
+        </section>
+        <section class="dashboard border-dark">
+          <article>
+            <h2>Available funds:</h2>
+            <p class="balance bold">0 $</p>
+          </article>
+          <div class="btns-box">
+            <button type="button" title="Add transaction" data-id="addTransaction" class="border-dark outline-dark color-dark">
+              <i class="fa-solid fa-plus"></i>
+              Add transaction
+            </button>
+
+            <button type="button" title="Clear all" data-id="clearAll" class="border-dark outline-dark color-dark">
+              <i class="fa-solid fa-trash"></i>
+              Clear all
+            </button>
+          </div>
+
+          <section>
+            <h4>Choose style:</h4>
+            <div class="colors-box" >
+              <div class="color-box resize-hover" data-color-name="white"></div>
+              <div class="color-box resize-hover" data-color-name="dark"></div>
+            </div>
+          </section>
+        </section>
+      </section>
+  </main>
+  <aside class="add-transaction-box hide">
+    <h2>Add new transaction</h2>
+
+    <p class="form-paragraph">
+      <label for="transactionName" class="form-label-headling">
+        <span>Name:</span>
+        <small>(enter name of transaction)</small>
+      </label>
+      <input id="transactionName" data-id="transactionName" type="text" placeholder="Enter transaction name" name="transactionName" value="">
+      <span class="feedback hide">Please enter transaction name</span>
+    </p>
+
+    <p class="form-paragraph">
+      <label for="amount" class="form-label-headling">
+        <span>Amount:</span>
+        <small>(enter amount of transaction, if you adding expense, please add "-" sign before)</small>
+      </label>
+      <input id="amount" data-id="amount" type="number" placeholder="Enter amount of transaction" name="amount" value="">
+      <span class="feedback hide">Please enter amount of transaction</span>
+    </p>
+
+    <p class="form-paragraph">
+      <label for="category" class="form-label-headling">
+        <span>Category:</span>
+        <small>([ + ] means income, [ - ] expense)</small>
+      </label>
+      <select name="category" id="category" data-id="category">
+        <option value="" selected disabled> - select category -</option>
+        <option value="money-bill">[ + ] Income</option>
+        <option value="cart-shopping">[ - ] Shopping</option>
+        <option value="burger">[ - ] Food</option>
+        <option value="film">[ - ] Cinema</option>
+      </select>
+      <span class="feedback hide">Please select category</span>
+    </p>
+
+    <div class="btns-box">
+      <button type="button" title="Save" data-id="saveTransaction">
+        <i class="fa-solid fa-floppy-disk"></i>
+        Save
+      </button>
+
+      <button type="button" title="Cancel" data-id="cancelTransaction">
+        <i class="fa-solid fa-ban"></i>
+        Cancel
+      </button>
+    </div>
+  </aside>
+  <script src="./script.js"></script>
+</body>
+</html>
