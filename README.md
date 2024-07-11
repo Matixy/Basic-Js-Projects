@@ -1,2 +1,2 @@
 # Basic-Js-Projects
- Few simple projects created in JavaScript
+ Few simple projects created in pure JavaScript
