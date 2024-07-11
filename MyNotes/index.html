@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MyNote</title>
+
+  <!-- css -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- fontawesome -->
+  <script src="https://kit.fontawesome.com/935216980f.js" crossorigin="anonymous"></script>
+
+</head>
+<body class="color-dark bg-white">
+  <header>
+    <div class="heading">
+      <i class="fa-solid fa-note-sticky fa-xl"></i>
+      <h1>MyNotes</h1>
+    </div>
+    <div class="btns-box">
+      <button type="button" title="Add note" data-id="addNote" class="border-dark outline-dark color-dark">
+        <i class="fa-solid fa-plus"></i>
+        Add Note
+      </button>
+
+      <button type="button" title="Clear All" data-id="clearAll" class="border-dark outline-dark color-dark">
+        <i class="fa-solid fa-trash"></i>
+        clear all
+      </button>
+    </div>
+  </header>
+  <aside class="addNote-modal border-dark hide">
+    <h2>Add note</h2>
+    <section class="addNote-box">
+      <p class="form-paragraph">
+        <label for="category" class="form-label-headling">
+          <span>Select category:</span>
+        </label>
+        <select name="category" id="category" data-id="category">
+          <option value="" selected disabled> - select category -</option>
+          <option value="shopping">Shopping</option>
+          <option value="work">Work</option>
+          <option value="other">Other</option>
+        </select>
+        <span class="feedback hide">Please select category!</span>
+      </p>
+
+      <p class="form-paragraph">
+        <label for="noteContent" class="form-label-headling">
+          <span>Enter content of the note:</span>
+        </label>
+        <textarea id="noteContent" data-id="noteContent" name="noteContent" rows="3" ></textarea>
+        <span class="feedback hide">Please fill content of the note!</span>
+      </p>
+
+      <div class="btns-box">
+        <button type="button" title="Save note" data-id="saveNote" class="border-dark outline-dark color-dark">
+          <i class="fa-solid fa-floppy-disk"></i>
+          Save
+        </button>
+
+        <button type="button" title="Cancel note" data-id="cancelNote" class="border-dark outline-dark color-dark">
+          <i class="fa-solid fa-xmark"></i>
+          Cancel
+        </button>
+      </div>
+    </section>
+  </aside>
+  <main>
+      <section class="content-box">
+      </section>
+  </main>
+  <script src="./script.js"></script>
+</body>
+</html>
