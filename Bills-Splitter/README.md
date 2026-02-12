@@ -1,2 +1,2 @@
-# [Bills splitter](https://matixy.github.io/Basic-Js-Projects/Bills-Splitter/) 📃
- Quickly split bills with your friends
+[Bills splitter](https://matixy.github.io/Basic-Js-Projects/Bills-Splitter/) 📃
+Quickly split bills with your friends
